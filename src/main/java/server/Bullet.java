@@ -15,4 +15,8 @@ public class Bullet {
     public Vector2 getDirection() {
         return direction;
     }
+
+    public Player checkCollision(){
+        return null;
+    }
 }

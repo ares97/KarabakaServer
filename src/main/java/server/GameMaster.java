@@ -13,7 +13,7 @@ public class GameMaster {
 
     private GameMaster(){}
 
-    public synchronized void dispatchMessage(String message, int index) throws IndexOutOfBoundsException{
+    public synchronized void dispatchMessage(int index, String message) throws IndexOutOfBoundsException{
         Player currentPlayer;
         try{
             currentPlayer = state.getPlayers().get(index);
@@ -48,8 +48,8 @@ public class GameMaster {
         return empty;
     }
 
-    public void update(int userNumber, String message){
-        
+    public void update() {
+
     }
 
     public String getDatagram(){

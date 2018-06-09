@@ -9,24 +9,32 @@ public class Player {
     }
 
     public void move(String dir){
+        Vector2 newPosition = this.position;
+        Vector2 newDirection = this.direction;
         switch(dir){
             case "left":
-                position.x -= 1;
-                direction.set(-1, 0);
+                newPosition.x -= 1;
+                newDirection.set(-1, 0);
                 break;
             case "right":
-                position.x += 1;
-                direction.set(1, 0);
+                newPosition.x += 1;
+                newDirection.set(1, 0);
                 break;
             case "down":
-                position.y -= 1;
-                direction.set(0, -1);
+                newPosition.y -= 1;
+                newDirection.set(0, -1);
                 break;
             case "up":
-                position.y += 1;
-                direction.set(0, 1);
+                newPosition.y += 1;
+                newDirection.set(0, 1);
                 break;
         }
+
+        if(GameMaster.getInstance().isEmpty(newPosition)){
+            position = newPosition;
+            direction = newDirection;
+        }
+
     }
 
     public void shoot(){
