@@ -47,7 +47,7 @@ public class GameMaster {
     }
 
     public void update(){
-        
+
     }
 
 }
