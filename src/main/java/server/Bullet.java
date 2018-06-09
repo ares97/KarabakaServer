@@ -1,3 +1,5 @@
+package server;
+
 public class Bullet {
     private Vector2 position;
     private Vector2 direction;
@@ -12,5 +14,9 @@ public class Bullet {
 
     public Vector2 getDirection() {
         return direction;
+    }
+
+    public Player checkCollision(){
+        return null;
     }
 }

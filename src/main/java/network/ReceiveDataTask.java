@@ -1,11 +1,14 @@
+package network;
+
+import constans.Const;
+import server.GameMaster;
+import server.UsersInformation;
+
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.SocketException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
 
 /**
  * Created by karol on 09.06.18.
@@ -13,17 +16,15 @@ import java.util.HashSet;
 public class ReceiveDataTask implements Runnable {
 
     private GameMaster gameMaster;
-    private HashMap hashMap;
-    private Integer currNumb = 0;
+    private UsersInformation usersInformation;
 
-    public ReceiveDataTask()
-    {
-        init();
+    public ReceiveDataTask(UsersInformation usersInformation) {
+        this.usersInformation = usersInformation;
     }
 
     @Override
     public void run() {
-        //gameMaster = GameMaster.getInstance();
+        gameMaster = GameMaster.getInstance();
         while (true)
         {
             try {
@@ -33,31 +34,14 @@ public class ReceiveDataTask implements Runnable {
                 datagramSocket.receive(dp);
                 String str = new String(dp.getData(), 0, dp.getLength());
                 InetAddress address= dp.getAddress();
-                addElem(address.toString());
-                //gameMaster.update(hashMap.get(address.toString()),str);
+                usersInformation.addElem(address.toString());
+                gameMaster.update(usersInformation.getUserNumber(address.toString()),str);
                 datagramSocket.close();
             } catch (SocketException e) {
                 e.printStackTrace();
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
-    }
-
-    public void init()
-    {
-        //gameMaster = gameMaster = GameMaster.getInstance();
-        this.hashMap = new HashMap<String,Integer>();
-        this.currNumb = 0;
-    }
-
-    public void addElem(String ip)
-    {
-        if(hashMap.containsValue(ip))
-            return;
-        else {
-            hashMap.put(ip, currNumb.intValue());
-            currNumb++;
         }
     }
 

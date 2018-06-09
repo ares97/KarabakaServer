@@ -1,3 +1,5 @@
+package constans;
+
 /**
  * Created by karol on 09.06.18.
  */
