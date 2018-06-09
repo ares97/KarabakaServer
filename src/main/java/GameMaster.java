@@ -8,19 +8,26 @@ public class GameMaster {
         return instance;
     }
     private GameMaster(){};
-    void update(int index, String message) throws IndexOutOfBoundsException{
+    public synchronized void update(int index, String message) throws IndexOutOfBoundsException{
+        Player currentPlayer;
+        try{
+            currentPlayer = state.getPlayers().get(index);
+        }
+        catch(IndexOutOfBoundsException ex){
+            return;
+        }
         switch(message){
-            case "moveUp":
-
+            case "move_up":
+                currentPlayer.move("up");
                 break;
-            case "moveDown":
-
+            case "move_down":
+                currentPlayer.move("down");
                 break;
-            case "moveLeft":
-
+            case "move_left":
+                currentPlayer.move("left");
                 break;
-            case "moveRight":
-
+            case "move_right":
+                currentPlayer.move("right");
                 break;
             case "shoot":
 

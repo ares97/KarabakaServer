@@ -1,7 +1,7 @@
 public class Player {
     Vector2 position;
-    void move(String action){
-        switch(action){
+    void move(String direction){
+        switch(direction){
             case "left":
                 position.x -= 1;
                 break;
