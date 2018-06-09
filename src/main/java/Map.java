@@ -3,5 +3,7 @@ import java.util.List;
 
 public class Map {
     List<Boolean> walls;
-    public 
+    public Boolean isEmpty(Vector2 position){
+        return walls.get(position.x * )
+    }
 }
