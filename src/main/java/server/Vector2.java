@@ -1,3 +1,5 @@
+package server;
+
 public class Vector2 {
     public int x, y;
 
@@ -10,4 +12,9 @@ public class Vector2 {
         this.y = y;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        Vector2 objVec = (Vector2)obj;
+        return this.x == objVec.x && this.y == objVec.y;
+    }
 }

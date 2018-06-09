@@ -1,7 +1,8 @@
+package server;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
 
 public class GameState {
 
@@ -31,6 +32,15 @@ public class GameState {
 
     public void addBullet(Bullet bullet){
         bullets.add(bullet);
+    }
+
+    public boolean isEmptyPlayer(Vector2 position){
+        for (Player player: players) {
+            if(player.getPosition().equals(position)){
+                return false;
+            }
+        }
+        return true;
     }
 
 }

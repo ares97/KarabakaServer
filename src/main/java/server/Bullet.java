@@ -1,3 +1,5 @@
+package server;
+
 public class Bullet {
     private Vector2 position;
     private Vector2 direction;

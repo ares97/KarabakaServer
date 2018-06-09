@@ -1,3 +1,5 @@
+package server;
+
 public class Player {
     private Vector2 position;
     private Vector2 direction;
@@ -31,4 +33,7 @@ public class Player {
         GameState.getInstance().addBullet(new Bullet(this.position, this.direction));
     }
 
+    public Vector2 getPosition() {
+        return position;
+    }
 }

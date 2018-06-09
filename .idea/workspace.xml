@@ -2,11 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f537c793-695b-4411-82d0-b11058050adf" name="Default" comment="">
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/UsersInformation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/GameMaster.java" afterPath="$PROJECT_DIR$/src/main/java/GameMaster.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ReceiveDataTask.java" afterPath="$PROJECT_DIR$/src/main/java/ReceiveDataTask.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SendDataTask.java" afterPath="$PROJECT_DIR$/src/main/java/SendDataTask.java" />
+=======
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Const.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/SendDataTask.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Map.java" afterPath="$PROJECT_DIR$/src/main/java/Map.java" />
+>>>>>>> 410db09ebd18ef45ff6ce2901db08ed8623d085f
+>>>>>>> 02a92c0258f0cd02b310b789216a4c315da6c674
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,6 +63,7 @@
       <file leaf-file-name="ReceiveDataTask.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ReceiveDataTask.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="200">
               <caret line="17" column="63" lean-forward="false" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
               <folding>
@@ -72,6 +87,20 @@
                 <element signature="e#689#690#0" expanded="true" />
                 <element signature="e#741#742#0" expanded="true" />
               </folding>
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="102">
+              <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#140#141#0" expanded="true" />
+                <element signature="e#173#174#0" expanded="true" />
+              </folding>
+=======
+            <state relative-caret-position="380">
+              <caret line="29" column="68" lean-forward="false" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
+              <folding />
+>>>>>>> 02a92c0258f0cd02b310b789216a4c315da6c674
             </state>
           </provider>
         </entry>
@@ -82,6 +111,7 @@
             <state relative-caret-position="80">
               <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
               <folding />
+>>>>>>> 410db09ebd18ef45ff6ce2901db08ed8623d085f
             </state>
           </provider>
         </entry>
@@ -840,6 +870,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Const.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="102">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
+=======
         <state relative-caret-position="80">
           <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
           <folding />
@@ -861,11 +899,17 @@
         <state relative-caret-position="340">
           <caret line="22" column="72" lean-forward="false" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
           <folding>
+<<<<<<< HEAD
             <element signature="imports" expanded="true" />
             <element signature="e#326#327#0" expanded="true" />
             <element signature="e#382#383#0" expanded="true" />
             <element signature="e#802#803#0" expanded="true" />
             <element signature="e#855#856#0" expanded="true" />
+=======
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+>>>>>>> 410db09ebd18ef45ff6ce2901db08ed8623d085f
+>>>>>>> 02a92c0258f0cd02b310b789216a4c315da6c674
           </folding>
         </state>
       </provider>

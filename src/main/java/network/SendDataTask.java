@@ -1,3 +1,8 @@
+package network;
+
+import server.GameMaster;
+import server.UsersInformation;
+
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.SocketException;
