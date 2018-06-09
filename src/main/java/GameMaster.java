@@ -38,9 +38,12 @@ public class GameMaster {
         }
     }
 
-    public boolean isEmpty(){
-        boolean empty = true;
-
+    public boolean isEmpty(Vector2 position){
+        boolean empty = Map.getInstance().isEmptyBlock(position);
+        if(GameState.getInstance().isEmptyPlayer(position) == false){
+            empty = false;
+        }
+        return empty;
     }
 
     public void update(){

@@ -33,4 +33,13 @@ public class GameState {
         bullets.add(bullet);
     }
 
+    public boolean isEmptyPlayer(Vector2 position){
+        for (Player player: players) {
+            if(player.getPosition().equals(position)){
+                return false;
+            }
+        }
+        return true;
+    }
+
 }

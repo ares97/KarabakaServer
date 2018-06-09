@@ -31,4 +31,7 @@ public class Player {
         GameState.getInstance().addBullet(new Bullet(this.position, this.direction));
     }
 
+    public Vector2 getPosition() {
+        return position;
+    }
 }
