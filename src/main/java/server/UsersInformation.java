@@ -37,10 +37,16 @@ public class UsersInformation {
         this.currNumb = 0;
     }
 
-    public String getkey()
+    public String getUserIp(int playerNumb)
     {
         Set<String>keySet = hashMap.keySet();
-        for
+        for(String s:keySet)
+        {
+            if((int)hashMap.get(s)==playerNumb)
+            {
+                return s;
+            }
+        }
     }
 
 }
