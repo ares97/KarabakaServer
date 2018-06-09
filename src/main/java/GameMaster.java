@@ -1,8 +1,8 @@
 public class GameMaster {
     GameState state;
-    private GameMaster instance = null;
+    private static GameMaster instance = null;
 
-    public GameMaster getInstance(){
+    public static GameMaster getInstance(){
         if (instance == null){
             instance = new GameMaster();
         }
