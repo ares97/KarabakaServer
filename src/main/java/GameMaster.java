@@ -1,8 +1,8 @@
 public class GameMaster {
     GameState state;
-    private GameMaster instance = null;
+    private static GameMaster instance = null;
 
-    public GameMaster getInstance(){
+    public static GameMaster getInstance(){
         if (instance == null){
             instance = new GameMaster();
         }
@@ -43,8 +43,12 @@ public class GameMaster {
 
     }
 
-    public void update(){
+    public void update(int userNumber, String message){
         
+    }
+
+    public String getDatagram(){
+        return null;
     }
 
 }
