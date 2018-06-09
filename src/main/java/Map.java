@@ -3,5 +3,5 @@ import java.util.List;
 
 public class Map {
     List<Boolean> walls;
-    public 
+    public int dupa;
 }

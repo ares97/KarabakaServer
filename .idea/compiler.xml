@@ -9,5 +9,8 @@
         <module name="KarabakaServer" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="KarabakaServer" target="7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
