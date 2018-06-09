@@ -1,13 +1,16 @@
 public class GameMaster {
     GameState state;
     private GameMaster instance = null;
+
     public GameMaster getInstance(){
         if (instance == null){
             instance = new GameMaster();
         }
         return instance;
     }
-    private GameMaster(){};
+
+    private GameMaster(){}
+
     public synchronized void update(int index, String message) throws IndexOutOfBoundsException{
         Player currentPlayer;
         try{
@@ -30,7 +33,7 @@ public class GameMaster {
                 currentPlayer.move("right");
                 break;
             case "shoot":
-
+                currentPlayer.shoot();
                 break;
 
         }
