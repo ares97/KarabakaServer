@@ -11,7 +11,7 @@ public class GameMaster {
 
     private GameMaster(){}
 
-    public synchronized void update(int index, String message) throws IndexOutOfBoundsException{
+    public synchronized void dispatchMessage(String message, int index) throws IndexOutOfBoundsException{
         Player currentPlayer;
         try{
             currentPlayer = state.getPlayers().get(index);
@@ -35,8 +35,16 @@ public class GameMaster {
             case "shoot":
                 currentPlayer.shoot();
                 break;
-
         }
+    }
+
+    public boolean isEmpty(){
+        boolean empty = true;
+
+    }
+
+    public void update(){
+        
     }
 
 }
